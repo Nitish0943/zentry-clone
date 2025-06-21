@@ -1,44 +1,38 @@
-```markdown
-# 🛡️ Zentry Clone
+# 🕹️ Zentry Clone
 
-A full-stack clone of [Zentry.com](https://zentry.com) – an enterprise-grade Zero Trust Network Access (ZTNA) platform that focuses on secure, modern access to internal applications.
-
-Built to explore advanced web security, authentication mechanisms, and full-stack application architecture with a focus on performance, scalability, and user experience.
+A visually rich, animated React front-end inspired by [Zentry.com](https://zentry.com), simulating a next-gen gaming/metaverse platform. This project demonstrates advanced UI/UX, interactive animations, and a modular component structure using modern web technologies.
 
 ---
 
-## 📸 Demo
+## ✨ Demo
 
 > Add your project demo link or screenshots here  
 > Example:  
-> ![Zentry Clone Screenshot](./assets/zentry-clone-demo.png)
+> ![Zentry Clone Screenshot](./src/assets/zentry-clone-demo.png)
 
 ---
 
 ## 🚀 Features
 
-- 🔐 Zero Trust Network Access simulation
-- 🔑 Authentication with JWT/OAuth
-- 🧑‍💼 Role-based access control (RBAC)
-- 📊 Mocked admin dashboard for system stats
-- 📁 Private resource gateway simulation
-- 🪪 User onboarding and session management
-- 🧠 Clean, animated UI inspired by Zentry
+- 🎮 Immersive hero section with animated video transitions
+- 🧩 Modular, reusable React components (Hero, Features, Story, About, Contact, etc.)
+- 🖼️ Bento-style feature cards with tilt and hover effects
+- 🖋️ Animated titles and interactive UI elements
+- 🎵 Audio playback toggle in the navbar
 - 📱 Fully responsive and mobile-ready
-- 🧪 Unit-tested routes and components
+- 🎨 Custom fonts and Tailwind CSS theming
+- ⚡ Smooth GSAP-powered scroll and hover animations
 
 ---
 
 ## 🛠 Tech Stack
 
-| Layer      | Tech                                                           |
-|------------|----------------------------------------------------------------|
-| Frontend   | Next.js, React, TypeScript, Tailwind CSS, Framer Motion       |
-| Backend    | Node.js, Express.js / Next.js API Routes                       |
-| Auth       | Firebase / NextAuth / Auth0 / Custom JWT                       |
-| Database   | PostgreSQL / MongoDB                                           |
-| Deployment | Vercel / Render / Docker (optional)                           |
-| Tooling    | ESLint, Prettier, GitHub Actions, Husky, Lint-Staged          |
+| Layer      | Tech                                  |
+|------------|---------------------------------------|
+| Frontend   | React, Vite, Tailwind CSS, GSAP       |
+| Animation  | GSAP, Framer Motion (planned)         |
+| Icons      | react-icons                           |
+| Tooling    | ESLint, Prettier                      |
 
 ---
 
@@ -46,19 +40,16 @@ Built to explore advanced web security, authentication mechanisms, and full-stac
 
 ```
 zentry-clone/
-├── public/              # Static assets
+├── public/              # Static assets (audio, images, videos, fonts)
 ├── src/
-│   ├── components/      # Reusable components
-│   ├── pages/           # Next.js pages
-│   ├── api/             # Backend routes
-│   ├── lib/             # Utils and helpers
-│   ├── styles/          # Tailwind/global styles
-│   ├── config/          # Environment configs
-│   └── types/           # TypeScript types
-├── .env.example         # Sample environment config
-├── next.config.js
-├── tailwind.config.js
-├── package.json
+│   ├── components/      # UI components (Hero, Features, etc.)
+│   ├── assets/          # Project assets (screenshots, etc.)
+│   ├── index.css        # Global styles (Tailwind, custom fonts)
+│   └── main.jsx         # App entry point
+├── index.html           # HTML entry
+├── tailwind.config.js   # Tailwind config
+├── vite.config.js       # Vite config
+├── package.json         # Project metadata and scripts
 └── README.md
 ```
 
@@ -74,65 +65,40 @@ cd zentry-clone
 # Install dependencies
 npm install
 
-# Setup environment variables
-cp .env.example .env
-# Edit the .env file with your credentials
-
-# Run the development server
+# Start the development server
 npm run dev
 
 # Visit the app
-http://localhost:3000
+http://localhost:5173
 ```
 
 ---
 
-## 🌐 Environment Variables
+## 📝 Customization
 
-Create a `.env` file using the `.env.example` template:
-
-```env
-DATABASE_URL=your_database_url
-JWT_SECRET=your_jwt_secret
-NEXTAUTH_SECRET=your_nextauth_secret
-NEXT_PUBLIC_BASE_URL=http://localhost:3000
-```
+- **Assets:** Replace images/videos in `public/` for your own branding.
+- **Theme:** Edit `tailwind.config.js` and `src/index.css` for colors/fonts.
+- **Components:** Extend or modify components in `src/components/` for new sections.
 
 ---
 
 ## 📈 Planned Improvements
 
-- 🧭 Real-time gateway behavior using WebSockets
-- 📉 Real log visualization in admin dashboard
-- 🛡️ Integration with real VPN/Gateway services (mocked endpoints)
-- 🧠 AI-assisted access control logic (experimental)
-
----
-
-## 🧑‍💻 Contribution
-
-```bash
-# Fork the repository
-# Create a feature branch
-git checkout -b feature/my-feature
-
-# Commit changes
-git commit -m "Add: my feature"
-
-# Push and create a Pull Request
-git push origin feature/my-feature
-```
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+- 🌐 Backend/API integration (authentication, real data)
+- 🧠 More advanced animation and interaction logic
+- 🛡️ Real ZTNA/Zero Trust simulation (future)
+- 🧪 Unit and integration tests
 
 ---
 
 ## 🙋 Author
 
-**Satyam Mishra**  
-[GitHub](https://github.com/satyam-mishra-dev) · [LinkedIn](https://linkedin.com/in/satyam-mishra-9329a1329) · [Instagram](https://www.instagram.com/hey_saty_here_/)
+**Nitish Pathak**  
+[GitHub](https://github.com/Nitish0943) · [LinkedIn](https://www.linkedin.com/in/nitish-pathak-935524260/)
+
+---
+
+## 📄 License
+
+MIT License. See [LICENSE](./LICENSE) for details.
 ```
