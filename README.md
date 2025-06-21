@@ -59,7 +59,7 @@ zentry-clone/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/zentry-clone.git
+git clone https://github.com/Nitish0943/zentry-clone.git
 cd zentry-clone
 
 # Install dependencies
